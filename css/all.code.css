@@ -39,3 +39,26 @@ body {
 	font-size: 20px; /* published uses 17; had been 14, 16 may be better */
 	line-height: 1.2;
 }
+
+/* MKs additions */
+
+/* Adding a media query for printing only */
+@media only print{
+	p {
+	  page-break-inside: avoid;
+	}
+  
+	/* .header {
+	  display: none;
+	} */
+	
+	.innerBodyContainer{
+	  display: inline;
+	  overflow: visible;
+	}
+  
+	  .scrollableContainer {
+	  display: inline;
+	  overflow-y: visible;
+	}
+  }
