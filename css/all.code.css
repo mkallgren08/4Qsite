@@ -12,7 +12,7 @@
 /*mobile will throw away overflow on body; need both innerbody and body to be hidden */
 body, .innerBodyContainer {
 
-	overflow: hidden;
+	overflow: auto;
 }
 
 .innerBodyContainer {
@@ -44,7 +44,7 @@ body {
 
 /* Attempting to solve the overflow issue of overflow momentum scrolling */
 html{
-	overflow-y: scroll;
+	overflow-y: auto;
 }
 
 /* Adding a media query for printing only */
