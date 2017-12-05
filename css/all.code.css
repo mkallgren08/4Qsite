@@ -10,7 +10,7 @@
 	text-align: center;
 }
 /*mobile will throw away overflow on body; need both innerbody and body to be hidden */
-html, body, .innerBodyContainer {
+/* body, */ .innerBodyContainer {
 
 	overflow: hidden;
 }
