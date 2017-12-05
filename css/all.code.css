@@ -10,7 +10,7 @@
 	text-align: center;
 }
 /*mobile will throw away overflow on body; need both innerbody and body to be hidden */
-/* body, */ .innerBodyContainer {
+body, .innerBodyContainer {
 
 	overflow: hidden;
 }
@@ -41,6 +41,11 @@ body {
 }
 
 /* MKs additions */
+
+/* Attempting to solve the overflow issue of overflow momentum scrolling */
+html{
+	overflow-y: scroll;
+}
 
 /* Adding a media query for printing only */
 @media only print{
