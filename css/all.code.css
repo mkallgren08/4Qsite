@@ -1,0 +1,41 @@
+.header {
+
+	position: relative; /*menu is relative inside the container*/
+	width: 100%;
+	z-index: 1; /* menu will appear over content container */
+}
+
+.headerTitle {
+
+	text-align: center;
+}
+/*mobile will throw away overflow on body; need both innerbody and body to be hidden */
+html, body, .innerBodyContainer {
+
+	overflow: hidden;
+}
+
+.innerBodyContainer {
+
+	width: 100%; 
+}
+.contentPadder {
+
+    height: 20px;
+}
+.content {
+
+  margin: 0px auto;
+  width: 90%;
+}
+.scrollableContainer {
+
+	width: 100%;
+	overflow-y: auto; /* WAS scroll: adds scrollbar even if unneeded */
+	/* overflow-x: hidden; /* doesn't appear we still need */
+}
+body {
+
+	font-size: 20px; /* published uses 17; had been 14, 16 may be better */
+	line-height: 1.2;
+}
